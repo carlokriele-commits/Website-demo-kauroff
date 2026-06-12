@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – KAUROFF Malereibetrieb GmbH</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:     #0d0d0d;
+      --base:      #1a1a1a;
+      --elevated:  #222222;
+      --surface:   #2a2a2a;
+      --border:    rgba(255,255,255,0.07);
+      --gold:      #c9a84c;
+      --gold-dim:  rgba(201,168,76,0.12);
+      --gold-line: rgba(201,168,76,0.4);
+      --text:      #f0ede8;
+      --muted:     #8a8680;
+      --nav-h:     72px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--black);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-line); border-radius: 3px; }
+
+    /* NAV */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      padding: 0 clamp(20px, 5vw, 80px);
+      background: rgba(13,13,13,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-back {
+      margin-left: auto;
+      display: flex; align-items: center; gap: 8px;
+      color: var(--muted); font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+    .nav-back svg { transition: transform 0.2s; }
+    .nav-back:hover svg { transform: translateX(-3px); }
+
+    /* HERO */
+    .page-hero {
+      padding: calc(var(--nav-h) + 60px) clamp(20px, 8vw, 120px) 60px;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .page-eyebrow::before {
+      content: ''; width: 32px; height: 1px; background: var(--gold);
+    }
+    .page-title {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800; line-height: 1.1;
+      letter-spacing: -0.03em; color: var(--text);
+      margin-bottom: 16px;
+    }
+    .page-subtitle {
+      font-size: 0.9rem; color: var(--muted);
+    }
+
+    /* CONTENT */
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: clamp(40px, 6vw, 80px) clamp(20px, 8vw, 120px);
+    }
+
+    .ds-section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--border);
+    }
+    .ds-section:last-child { border-bottom: none; }
+
+    .ds-section-number {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .ds-h2 {
+      font-size: 1.4rem; font-weight: 700;
+      letter-spacing: -0.02em; color: var(--text);
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--gold-line);
+    }
+
+    .ds-h3 {
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--text); letter-spacing: 0.01em;
+      margin: 28px 0 10px;
+    }
+
+    .ds-p {
+      font-size: 0.9rem; color: var(--muted);
+      line-height: 1.8; margin-bottom: 12px;
+    }
+
+    .ds-contact {
+      background: var(--elevated);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--gold);
+      padding: 20px 24px;
+      margin: 16px 0;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: var(--text);
+    }
+    .ds-contact a { color: var(--gold); text-decoration: none; }
+    .ds-contact a:hover { text-decoration: underline; }
+
+    .ds-ul {
+      list-style: none; margin: 12px 0 12px 0;
+    }
+    .ds-ul li {
+      font-size: 0.88rem; color: var(--muted);
+      padding: 5px 0 5px 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .ds-ul li::before {
+      content: '';
+      position: absolute; left: 0; top: 13px;
+      width: 5px; height: 5px;
+      background: var(--gold); border-radius: 50%;
+    }
+
+    .ds-link { color: var(--gold); text-decoration: none; word-break: break-all; }
+    .ds-link:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: var(--base);
+      border-top: 1px solid var(--border);
+      padding: 40px clamp(20px, 5vw, 80px);
+    }
+    .footer-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .footer-links { display: flex; gap: 28px; list-style: none; }
+    .footer-links a {
+      color: var(--muted); font-size: 0.8rem; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.78rem; color: var(--muted); }
+    @media (max-width: 600px) {
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="brand_assets/logo.png" alt="KAUROFF Malereibetrieb GmbH" style="height:48px;width:auto;display:block;" />
+  </a>
+  <a href="index.html" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1M7 1L1 7l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Zurück zur Website
+  </a>
+</nav>
+
+<div class="page-hero">
+  <p class="page-eyebrow">Rechtliches</p>
+  <h1 class="page-title">Datenschutzerklärung</h1>
+  <p class="page-subtitle">KAUROFF Malereibetrieb GmbH · Stand: 2026</p>
+</div>
+
+<div class="content-wrap">
+
+  <!-- 1 -->
+  <div class="ds-section">
+    <p class="ds-section-number">Abschnitt 01</p>
+    <h2 class="ds-h2">Datenschutz auf einen Blick</h2>
+
+    <h3 class="ds-h3">Allgemeine Hinweise</h3>
+    <p class="ds-p">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+
+    <h3 class="ds-h3">Datenerfassung auf unserer Website</h3>
+    <p class="ds-p"><strong>Wer ist verantwortlich für die Datenerfassung?</strong><br>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum entnehmen.</p>
+    <p class="ds-p"><strong>Wie erfassen wir Ihre Daten?</strong><br>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z.B. durch Eingabe in ein Kontaktformular). Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst – das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).</p>
+    <p class="ds-p"><strong>Wofür nutzen wir Ihre Daten?</strong><br>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+    <p class="ds-p"><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem das Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen.</p>
+
+    <h3 class="ds-h3">Analyse-Tools und Drittanbieter-Tools</h3>
+    <p class="ds-p">Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden. Sie können dieser Analyse widersprechen oder sie durch die Nichtbenutzung bestimmter Tools verhindern.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="ds-section">
+    <p class="ds-section-number">Abschnitt 02</p>
+    <h2 class="ds-h2">Allgemeine Hinweise und Pflichtinformationen</h2>
+
+    <h3 class="ds-h3">Datenschutz</h3>
+    <p class="ds-p">Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+    <h3 class="ds-h3">Verantwortliche Stelle</h3>
+    <div class="ds-contact">
+      <strong>KAUROFF Malereibetrieb GmbH</strong><br>
+      Niedersachsenstraße 32 B<br>
+      30853 Langenhagen<br><br>
+      Telefon: <a href="tel:0511771222">0511 771222</a><br>
+      E-Mail: <a href="mailto:info@kauroff.de">info@kauroff.de</a>
+    </div>
+    <p class="ds-p">Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.</p>
+
+    <h3 class="ds-h3">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+    <p class="ds-p">Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+    <h3 class="ds-h3">Widerspruchsrecht gegen die Datenerhebung</h3>
+    <p class="ds-p">Wenn die Datenverarbeitung auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, haben Sie jederzeit das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, gegen die Verarbeitung Ihrer personenbezogenen Daten Widerspruch einzulegen. Die jeweilige Rechtsgrundlage, auf denen eine Verarbeitung beruht, entnehmen Sie dieser Datenschutzerklärung. Wenn Sie Widerspruch einlegen, werden wir Ihre betroffenen personenbezogenen Daten nicht mehr verarbeiten, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen.</p>
+
+    <h3 class="ds-h3">SSL- bzw. TLS-Verschlüsselung</h3>
+    <p class="ds-p">Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+
+    <h3 class="ds-h3">Auskunft, Sperrung, Löschung und Berichtigung</h3>
+    <p class="ds-p">Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.</p>
+
+    <h3 class="ds-h3">Recht auf Einschränkung der Verarbeitung</h3>
+    <p class="ds-p">Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>
+    <ul class="ds-ul">
+      <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten</li>
+      <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah</li>
+      <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie diese jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen</li>
+      <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben</li>
+    </ul>
+  </div>
+
+  <!-- 3 -->
+  <div class="ds-section">
+    <p class="ds-section-number">Abschnitt 03</p>
+    <h2 class="ds-h2">Datenerfassung auf unserer Website</h2>
+
+    <h3 class="ds-h3">Cookies</h3>
+    <p class="ds-p">Die Internetseiten verwenden teilweise sogenannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.</p>
+    <p class="ds-p">Die meisten der von uns verwendeten Cookies sind sogenannte „Session-Cookies". Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben.</p>
+
+    <h3 class="ds-h3">Server-Log-Dateien</h3>
+    <p class="ds-p">Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+    <ul class="ds-ul">
+      <li>Browsertyp und Browserversion</li>
+      <li>Verwendetes Betriebssystem</li>
+      <li>Referrer URL</li>
+      <li>Hostname des zugreifenden Rechners</li>
+      <li>Uhrzeit der Serveranfrage</li>
+      <li>IP-Adresse</li>
+    </ul>
+    <p class="ds-p">Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h3 class="ds-h3">Kontaktformular</h3>
+    <p class="ds-p">Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt somit ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die bis zum Widerruf erfolgte Verarbeitung der Daten bleibt vom Widerruf unberührt.</p>
+
+    <h3 class="ds-h3">Anfrage per E-Mail, Telefon oder Telefax</h3>
+    <p class="ds-p">Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.</p>
+
+    <h3 class="ds-h3">Verarbeitung von Kunden- und Vertragsdaten</h3>
+    <p class="ds-p">Wir erheben, verarbeiten und nutzen personenbezogene Kunden- und Vertragsdaten zur Begründung, inhaltlichen Ausgestaltung und Änderung unserer Vertragsbeziehungen. Personenbezogene Daten über die Inanspruchnahme unserer Internetseiten (Nutzungsdaten) erheben, verarbeiten und nutzen wir nur, soweit dies erforderlich ist, um dem Nutzer die Inanspruchnahme des Dienstes zu ermöglichen oder abzurechnen. Rechtsgrundlage dafür ist Art. 6 Abs. 1 lit. b DSGVO.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="ds-section">
+    <p class="ds-section-number">Abschnitt 04</p>
+    <h2 class="ds-h2">Analyse-Tools und Werbung</h2>
+
+    <h3 class="ds-h3">Google Analytics</h3>
+    <p class="ds-p">Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics verwendet sogenannte „Cookies". Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.</p>
+    <p class="ds-p">Die Speicherung von Google-Analytics-Cookies erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben auf dieser Website die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt.</p>
+    <p class="ds-p">Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern. Sie können darüber hinaus die Erfassung der durch den Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a class="ds-link" href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a></p>
+
+    <h3 class="ds-h3">Google AdWords und Google Conversion-Tracking</h3>
+    <p class="ds-p">Diese Website verwendet Google AdWords. AdWords ist ein Online-Werbeprogramm der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Im Rahmen von Google AdWords nutzen wir das sogenannte Conversion-Tracking. Wenn Sie auf eine von Google geschaltete Anzeige klicken wird ein Cookie für das Conversion-Tracking gesetzt. Bei Cookies handelt es sich um kleine Textdateien, die der Internet-Browser auf dem Computer des Nutzers ablegt. Diese Cookies verlieren nach 30 Tagen ihre Gültigkeit und dienen nicht der persönlichen Identifizierung der Nutzer. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h3 class="ds-h3">Facebook Pixel</h3>
+    <p class="ds-p">Unsere Website nutzt zur Konversionsmessung das Besucheraktions-Pixel von Facebook, Facebook Inc., 1601 S. California Ave, Palo Alto, CA 94304, USA. So kann das Verhalten der Seitenbesucher nachverfolgt werden, nachdem diese durch Klick auf eine Facebook-Werbeanzeige auf die Website des Anbieters weitergeleitet wurden. Dadurch können die Wirksamkeit der Facebook-Werbeanzeigen für statistische und Marktforschungszwecke ausgewertet werden. Die so erhobenen Daten sind für uns als Betreiber dieser Website anonym. Wir ziehen keine Rückschlüsse auf die Identität der Nutzer. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+    <p class="ds-p">Die Deaktivierung der Funktion „Benutzerdefinierte Zielgruppen" für eingeloggte Facebook-Nutzer ist unter <a class="ds-link" href="https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen" target="_blank" rel="noopener">facebook.com/ads/preferences</a> möglich.</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="ds-section">
+    <p class="ds-section-number">Abschnitt 05</p>
+    <h2 class="ds-h2">Plugins und Tools</h2>
+
+    <h3 class="ds-h3">YouTube mit erweitertem Datenschutz</h3>
+    <p class="ds-p">Unsere Website nutzt Plugins der Website YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA. Wir nutzen YouTube im erweiterten Datenschutzmodus. Dieser Modus bewirkt, dass YouTube keine Informationen über die Besucher auf dieser Website speichert, bevor diese sich das Video ansehen. Die Weitergabe von Daten an YouTube-Partner wird durch den erweiterten Datenschutzmodus hingegen nicht zwingend ausgeschlossen. So stellt YouTube – unabhängig davon, ob Sie sich ein Video ansehen – eine Verbindung zum Google DoubleClick-Netzwerk her. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h3 class="ds-h3">Google Web Fonts</h3>
+    <p class="ds-p">Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten sogenannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in Ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen. Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h3 class="ds-h3">Google Maps</h3>
+    <p class="ds-p">Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+    <h3 class="ds-h3">Google reCAPTCHA</h3>
+    <p class="ds-p">Wir nutzen „Google reCAPTCHA" auf unseren Websites. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Mit reCAPTCHA soll überprüft werden, ob die Dateneingabe auf unseren Websites durch einen Menschen oder durch ein automatisiertes Programm erfolgt. Hierzu analysiert reCAPTCHA das Verhalten des Websitebesuchers anhand verschiedener Merkmale. Diese Analyse beginnt automatisch, sobald der Websitebesucher die Website betritt. Zur Analyse wertet reCAPTCHA verschiedene Informationen aus (z.B. IP-Adresse, Verweildauer des Websitebesuchers auf der Website oder vom Nutzer getätigte Mausbewegungen). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="brand_assets/logo.png" alt="KAUROFF Malereibetrieb GmbH" style="height:44px;width:auto;display:block;" /></div>
+    <ul class="footer-links">
+      <li><a href="index.html#kontakt">Kontakt</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 KAUROFF Malereibetrieb GmbH</p>
+  </div>
+</footer>
+
+</body>
+</html>
