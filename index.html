@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "KAUROFF Malereibetrieb GmbH",
+    "url": "https://kauroff.de",
+    "logo": "./kauroff-logo.png",
+    "image": "./herobanner.png",
+    "description": "Venezianische Spachteltechnik, Betonoptik & Echtmetall-Wandgestaltung. Inhabergeführt seit 1996 im Raum Hannover.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Niedersachsenstraße 32B",
+      "postalCode": "30853",
+      "addressLocality": "Langenhagen",
+      "addressCountry": "DE"
+    },
+    "telephone": "+4905117712222",
+    "email": "info@kauroff.de",
+    "openingHours": [
+      "Mo-Fr 08:00-18:00",
+      "Sa 08:00-14:00"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "16",
+      "bestRating": "5"
+    },
+    "priceRange": "€€€",
+    "hasMap": "https://maps.google.com/?q=KAUROFF+Malereibetrieb+GmbH+Langenhagen",
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.4382,
+        "longitude": 9.7487
+      },
+      "geoRadius": "300000"
+    }
+  }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAUROFF Malereibetrieb GmbH – Meisterhafte Wandgestaltung Hannover</title>
+  <meta name="description" content="KAUROFF Malereibetrieb GmbH – Venezianische Spachteltechnik, Betonoptik, Echtmetall & Rostoptik. Inhabergeführt seit 1996. Raum Hannover & bundesweit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0d0d0d;
+      --base:     #1a1a1a;
+      --elevated: #222222;
+      --surface:  #2a2a2a;
+      --border:   rgba(255,255,255,0.07);
+      --gold:     #c9a84c;
+      --gold-dim: rgba(201,168,76,0.12);
+      --gold-line: rgba(201,168,76,0.4);
+      --text:     #f0ede8;
+      --muted:    #8a8680;
+      --nav-h:    72px;
+      --font-display: 'Cormorant', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--black);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      pointer-events: none;
+      background-image: var(--noise);
+      background-repeat: repeat;
+      background-size: 256px 256px;
+      opacity: 0.028;
+      mix-blend-mode: overlay;
+    }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--black); }
+    ::-webkit-scrollbar-thumb { background: var(--gold-line); border-radius: 3px; }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); }
+
+    /* ── NAV ── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      padding: 0 clamp(20px, 5vw, 80px);
+      background: rgba(13,13,13,0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    #nav.scrolled { border-bottom-color: var(--gold-line); background: rgba(13,13,13,0.97); }
+
+    .nav-logo {
+      font-size: 1.05rem; font-weight: 700;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text); text-decoration: none; flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--gold); }
+
+    .nav-links { display: flex; gap: 36px; list-style: none; margin: 0 auto; }
+    .nav-links a {
+      font-size: 0.8rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-phone {
+      font-size: 0.85rem; font-weight: 600; color: var(--gold);
+      text-decoration: none; letter-spacing: 0.04em; flex-shrink: 0; transition: opacity 0.2s;
+    }
+    .nav-phone:hover { opacity: 0.8; }
+
+    .nav-burger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; margin-left: auto;
+      background: none; border: none;
+    }
+    .nav-burger span { display: block; width: 24px; height: 2px; background: var(--text); transition: 0.3s; }
+
+    .mobile-menu {
+      display: none; position: fixed;
+      top: var(--nav-h); left: 0; right: 0;
+      background: rgba(13,13,13,0.98); backdrop-filter: blur(16px); z-index: 99;
+      padding: 32px clamp(20px,5vw,80px) 40px;
+      border-bottom: 1px solid var(--gold-line);
+      flex-direction: column; gap: 8px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1.1rem; font-weight: 500; color: var(--text);
+      text-decoration: none; padding: 12px 0;
+      border-bottom: 1px solid var(--border); letter-spacing: 0.06em;
+    }
+    .mobile-menu .mob-phone { margin-top: 16px; color: var(--gold); font-weight: 600; border-bottom: none; }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('./herobanner.png');
+      background-size: cover;
+      background-position: center;
+      filter: blur(0.7px) contrast(1.18) saturate(1.12) brightness(1.03);
+    }
+    .hero-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(13,13,13,0.75) 0%, rgba(13,13,13,0.55) 50%, rgba(13,13,13,0.70) 100%);
+    }
+    #hero::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 50%;
+      z-index: 1; pointer-events: none;
+      background: linear-gradient(to left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 40%, transparent 100%);
+    }
+    .hero-grain { display: none; }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: calc(var(--nav-h) + 60px) clamp(20px,5vw,80px) 80px;
+      max-width: 860px;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 28px;
+    }
+    .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1px; background: var(--gold); }
+    .hero-h1 {
+      font-size: clamp(2.4rem, 6vw, 5rem); font-weight: 800;
+      line-height: 1.08; letter-spacing: -0.03em; color: var(--text); margin-bottom: 24px;
+    }
+    .hero-h1 em { font-style: normal; color: var(--gold); }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem); font-weight: 300;
+      color: var(--muted); max-width: 560px; line-height: 1.7; margin-bottom: 48px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+    .hero-info {
+      position: absolute;
+      right: clamp(20px, 5vw, 80px);
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: none;
+      border: none;
+      border-left: 1px solid rgba(201, 168, 76, 0.4);
+      padding-left: 24px;
+      backdrop-filter: none;
+    }
+    .hero-info-item {
+      padding: 0;
+      border: none;
+    }
+    .hero-info-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 6px;
+    }
+    .hero-info-value {
+      font-size: 14px;
+      font-weight: 400;
+      color: #ffffff;
+      text-decoration: none;
+      line-height: 1.5;
+      display: block;
+      transition: color 0.2s;
+    }
+    .hero-info-value:hover { color: var(--gold); }
+    @media (max-width: 900px) { .hero-info { display: none; } }
+
+    .hero-info-social { display: flex; gap: 20px; }
+    .hero-info-social a {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: none; border: none; padding: 0;
+      color: var(--gold); font-size: 14px; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .hero-info-social a:hover { text-decoration: underline; color: var(--gold); }
+
+    .hero-social-mobile {
+      display: none;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .hero-social-mobile a {
+      display: flex; align-items: center; gap: 8px;
+      color: var(--muted); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.3);
+      padding: 10px 16px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .hero-social-mobile a:hover { color: var(--gold); border-color: var(--gold-line); }
+    @media (max-width: 900px) { .hero-social-mobile { display: flex; } }
+
+    /* ── BUTTONS ── */
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px;
+      background: var(--gold); color: var(--black);
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-gold:hover { background: #d4b660; transform: translateY(-1px); }
+    .btn-gold:active { transform: translateY(0); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 8px; padding: 15px 32px;
+      background: transparent; color: var(--text);
+      font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      text-decoration: none; border: 1px solid rgba(240,237,232,0.3); cursor: pointer;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: clamp(80px, 10vw, 140px) clamp(20px,5vw,80px); }
+
+    .section-label {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
+    }
+    .section-label::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800;
+      letter-spacing: -0.03em; line-height: 1.1; color: var(--text); margin-bottom: 16px;
+    }
+    .gold-divider { width: 48px; height: 2px; background: var(--gold); margin-bottom: 64px; }
+    .section-desc { font-size: 1rem; font-weight: 300; color: var(--muted); max-width: 560px; line-height: 1.75; margin-bottom: 64px; }
+
+    /* ── LEISTUNGEN ── */
+    #leistungen { background: var(--black); position: relative; }
+    #leistungen::before {
+      content: '';
+      position: absolute; inset: 0;
+      pointer-events: none; z-index: 0;
+      background: radial-gradient(
+        ellipse 60% 40% at 5% 50%,
+        rgba(201,168,76,0.04) 0%,
+        transparent 70%
+      );
+    }
+    #leistungen > * { position: relative; z-index: 1; }
+    .leistungen-block--featured { margin-bottom: 0; }
+    .leistungen-block--compact { margin-bottom: 48px; }
+    .leistungen-subhead {
+      font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em;
+      color: var(--text); margin-bottom: 22px;
+    }
+    .leistungen-separator {
+      height: 1px; margin: 56px 0 48px;
+      background: linear-gradient(to right, transparent, var(--gold-line), transparent);
+    }
+    .leistungen-list { margin-bottom: 0; }
+    .leistung-item { background: var(--elevated); border-bottom: 1px solid var(--border); }
+    .leistung-item:first-child { border-top: 1px solid var(--border); }
+    .leistung-btn {
+      width: 100%; background: transparent; color: var(--text);
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 24px; cursor: pointer; border: none;
+      border-bottom: 1px solid var(--border);
+      font-family: inherit; font-size: 0.9rem; font-weight: 500;
+      text-align: left; transition: background 0.2s;
+    }
+    .leistung-item.open > .leistung-btn,
+    .leistung-btn:hover { background: var(--surface); }
+    .leistung-item.open > .leistung-btn { border-bottom-color: var(--gold-line); }
+    .leistung-arrow { flex-shrink: 0; color: var(--gold); transition: transform 0.25s; }
+    .leistung-item.open .leistung-arrow { transform: rotate(180deg); }
+    .leistung-desc {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease, padding-bottom 0.3s ease;
+      padding: 0 24px; color: var(--muted); font-size: 0.88rem; line-height: 1.7;
+    }
+    .leistung-item.open .leistung-desc { max-height: 120px; padding-bottom: 18px; }
+
+    /* Zwei Spalten oben: Spezialgebiete + Haupttätigkeiten nebeneinander */
+    .leistungen-feature-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 4vw, 64px);
+      margin-bottom: 48px;
+    }
+    @media (max-width: 800px) { .leistungen-feature-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    /* Featured (Spezialgebiete / Haupttätigkeiten) — grösser, mehr Luft */
+    .leistungen-list.featured .leistung-btn { padding: 22px 24px; font-size: 0.98rem; font-weight: 600; }
+    .leistungen-list.featured .leistung-desc { padding: 0 24px; font-size: 0.92rem; }
+    .leistungen-list.featured .leistung-item.open .leistung-desc { max-height: 640px; padding-bottom: 24px; }
+    .leistung-desc-inner { display: flex; flex-direction: column; gap: 18px; align-items: flex-start; }
+    .leistung-desc-text { flex: 1 1 100%; max-width: 100%; }
+    .leistung-desc-photo {
+      order: -1; flex: 1 1 100%; max-width: 100%; width: 100%; aspect-ratio: 16 / 10;
+      overflow: hidden; cursor: pointer; background: var(--surface); position: relative;
+    }
+    .leistung-desc-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.3s ease;
+    }
+    .leistung-desc-photo::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(13,13,13,0) 60%, rgba(13,13,13,0.5) 100%);
+      pointer-events: none;
+    }
+    .leistung-desc-photo:hover img { transform: scale(1.05); }
+
+    /* Compact (Weitere Leistungen) — dichter */
+    .leistungen-list.compact .leistung-btn { padding: 14px 20px; font-size: 0.84rem; }
+    .leistungen-list.compact .leistung-desc { padding: 0 20px; font-size: 0.8rem; line-height: 1.6; }
+    .leistungen-list.compact .leistung-item.open .leistung-desc { max-height: 110px; padding-bottom: 14px; }
+
+    .leistung-link {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+      color: var(--gold); font-size: 0.78rem; font-weight: 700;
+      letter-spacing: 0.04em; text-decoration: none;
+      border-bottom: 1px solid transparent; transition: gap 0.2s, border-color 0.2s;
+    }
+    .leistung-link:hover { gap: 10px; border-color: var(--gold-line); }
+    .leistung-desc-text .leistung-link { display: flex; width: fit-content; }
+    .leistungen-final-link { text-align: center; margin-top: 8px; }
+    .leistungen-final-link .leistung-link { margin-top: 0; font-size: 0.85rem; }
+    .leistungen-cta { text-align: center; margin-top: 56px; }
+
+    /* ── PROJEKTE ── */
+    #projekte { background: var(--base); }
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 40px; }
+    .filter-btn {
+      padding: 10px 24px; font-family: 'Inter', sans-serif; font-size: 0.78rem;
+      font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--border); cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+    .filter-btn.active { background: var(--gold); color: var(--black); border-color: var(--gold); }
+
+    .projekte-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2px;
+    }
+    .projekt-card { position: relative; overflow: hidden; cursor: pointer; background: var(--elevated); }
+    .projekt-card.hidden { display: none; }
+    .projekt-img {
+      width: 100%; aspect-ratio: 4/3; background: var(--surface);
+      position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;
+    }
+    .projekt-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+    .projekt-card:hover .projekt-img img { transform: scale(1.05); }
+    .projekt-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,13,13,0.85) 0%, transparent 50%);
+      opacity: 0; transition: opacity 0.3s;
+      display: flex; align-items: flex-end; padding: 24px;
+    }
+    .projekt-card:hover .projekt-overlay { opacity: 1; }
+    .projekt-overlay-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+    .projekt-cat {
+      position: absolute; top: 16px; left: 16px; padding: 6px 14px;
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+      background: rgba(13,13,13,0.82); color: var(--gold); backdrop-filter: blur(8px);
+    }
+    .projekt-info { padding: 24px 28px; }
+    .projekt-info h3 { font-size: 0.92rem; font-weight: 600; color: var(--text); margin-bottom: 4px; line-height: 1.4; }
+    .projekt-info p { font-size: 0.78rem; color: var(--muted); }
+
+    /* ── ÜBER UNS ── */
+    #ueber-uns { background: var(--black); position: relative; }
+    #ueber-uns::before {
+      content: '';
+      position: absolute; inset: 0;
+      pointer-events: none; z-index: 0;
+      background: radial-gradient(
+        ellipse 50% 60% at 95% 30%,
+        rgba(201,168,76,0.05) 0%,
+        transparent 70%
+      );
+    }
+    #ueber-uns > * { position: relative; z-index: 1; }
+    .ueber-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 100px); align-items: start;
+    }
+    .ueber-body { font-size: 1rem; font-weight: 300; color: var(--muted); line-height: 1.8; margin-bottom: 48px; }
+    .ueber-body strong { color: var(--text); font-weight: 500; }
+    .ueber-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+      padding-top: 48px; border-top: 1px solid var(--border);
+    }
+    #ueber-uns .section-label {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      opacity: 0.85;
+    }
+    .stat-value {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 600;
+      color: var(--gold);
+      opacity: 0.9;
+      letter-spacing: -0.02em; line-height: 1; margin-bottom: 8px;
+    }
+    .stat-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); line-height: 1.4; }
+    .ueber-img-wrap { position: relative; }
+    .ueber-img-wrap::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 45%;
+      pointer-events: none;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(13,13,13,0.5) 50%,
+        rgba(13,13,13,0.92) 80%,
+        var(--black) 100%
+      );
+    }
+    .ueber-img { width: 100%; height: auto; object-fit: contain; display: block; }
+    .ueber-img-deco { position: absolute; bottom: -24px; right: -24px; width: 120px; height: 120px; border: 2px solid var(--gold); pointer-events: none; }
+    .ueber-img-badge {
+      position: absolute; top: 32px; left: 0;
+      background: var(--gold); color: var(--black);
+      padding: 16px 20px; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.5;
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials { background: var(--base); }
+    .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; }
+    .testi-card { background: var(--elevated); padding: 44px 36px; position: relative; }
+    .testi-card::before {
+      content: '\201C'; position: absolute; top: 16px; right: 28px;
+      font-size: 6rem; line-height: 1; color: var(--gold-dim);
+      font-family: Georgia, serif; pointer-events: none;
+    }
+    .testi-stars { display: flex; gap: 4px; margin-bottom: 24px; }
+    .testi-stars svg { width: 16px; height: 16px; fill: var(--gold); }
+    .testi-text { font-size: 0.93rem; font-weight: 300; color: var(--text); line-height: 1.75; margin-bottom: 28px; font-style: italic; }
+    .testi-author { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .testi-author strong { color: var(--gold); font-weight: 700; }
+
+    /* ── KONTAKT ── */
+    #kontakt { background: var(--black); position: relative; }
+    #kontakt::before {
+      content: '';
+      position: absolute; inset: 0;
+      pointer-events: none; z-index: 0;
+      background: radial-gradient(
+        ellipse 70% 50% at 50% 0%,
+        rgba(201,168,76,0.04) 0%,
+        transparent 60%
+      );
+    }
+    #kontakt > * { position: relative; z-index: 1; }
+    .kontakt-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(40px, 6vw, 100px); align-items: start; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+    .form-group label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--elevated); border: 1px solid var(--border);
+      color: var(--text); font-family: 'Inter', sans-serif;
+      font-size: 0.9rem; font-weight: 400; padding: 14px 18px;
+      outline: none; transition: border-color 0.2s;
+      -webkit-appearance: none; appearance: none; width: 100%;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--muted); font-weight: 300; }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group input.error,
+    .form-group select.error,
+    .form-group textarea.error { border-color: #c94c4c; }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' viewBox='0 0 12 8'%3E%3Cpath stroke='%238a8680' stroke-width='1.5' stroke-linecap='round' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 18px center;
+      padding-right: 44px; cursor: pointer;
+    }
+    .form-group select option { background: var(--elevated); }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-success {
+      display: none; padding: 20px 24px; margin-top: 16px;
+      background: var(--gold-dim); border: 1px solid var(--gold-line);
+      color: var(--gold); font-size: 0.88rem; font-weight: 500;
+    }
+    .info-block { padding: 36px; background: var(--elevated); margin-bottom: 2px; }
+    .info-block-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .info-block p { font-size: 0.9rem; font-weight: 300; color: var(--muted); line-height: 1.7; }
+    .info-block a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .info-block a:hover { color: var(--gold); }
+    .info-hours { display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; font-size: 0.88rem; }
+    .info-hours .day { color: var(--muted); }
+    .info-hours .time { color: var(--text); font-weight: 500; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--base); border-top: 1px solid var(--border);
+      padding: 48px clamp(20px,5vw,80px);
+    }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    .footer-logo { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); }
+    .footer-logo span { color: var(--gold); }
+    .footer-links { display: flex; gap: 32px; list-style: none; }
+    .footer-links a { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.08em; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--text); }
+    .footer-copy { font-size: 0.75rem; color: var(--muted); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links, .nav-phone { display: none; }
+      .nav-burger { display: flex; }
+      .ueber-grid, .kontakt-grid { grid-template-columns: 1fr; }
+      .ueber-img-wrap { order: -1; }
+      .ueber-img-badge { left: 0; }
+      .ueber-img-deco { right: 0; bottom: 0; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .projekte-grid { grid-template-columns: 1fr; }
+      .ueber-stats { grid-template-columns: 1fr 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn-gold, .hero-actions .btn-outline { text-align: center; justify-content: center; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 20px; }
+    }
+
+    /* ── WHATSAPP STICKY ── */
+    #wa-sticky {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9000;
+      width: 52px; height: 52px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    #wa-sticky:hover {
+      transform: scale(1.08);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+    }
+
+    /* ── COOKIE BANNER ── */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 8999;
+      background: var(--elevated);
+      border-top: 1px solid var(--gold-line);
+      padding: 18px clamp(20px, 5vw, 80px);
+      transform: translateY(0);
+      transition: transform 0.35s ease;
+    }
+    #cookie-banner.hidden {
+      transform: translateY(110%);
+    }
+    .cookie-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 24px; flex-wrap: wrap;
+    }
+    .cookie-text {
+      font-size: 0.82rem; color: var(--muted);
+      line-height: 1.5; flex: 1; min-width: 240px;
+    }
+    .cookie-link {
+      color: var(--gold); text-decoration: underline;
+      text-underline-offset: 3px; margin-left: 6px;
+    }
+    .cookie-actions { display: flex; gap: 10px; flex-shrink: 0; }
+    .btn-cookie-accept {
+      padding: 9px 22px;
+      background: var(--gold); color: var(--black);
+      border: none; font-family: var(--font-body);
+      font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; transition: opacity 0.2s;
+    }
+    .btn-cookie-accept:hover { opacity: 0.85; }
+    .btn-cookie-decline {
+      padding: 9px 22px;
+      background: transparent; color: var(--muted);
+      border: 1px solid var(--border);
+      font-family: var(--font-body);
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      cursor: pointer; transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-cookie-decline:hover { color: var(--text); border-color: var(--muted); }
+
+    @media (max-width: 600px) {
+      .cookie-inner { flex-direction: column; align-items: flex-start; }
+      .cookie-actions { width: 100%; }
+      .btn-cookie-accept, .btn-cookie-decline { flex: 1; text-align: center; }
+    }
+
+    /* ── MOBILE CTA BAR ── */
+    #mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 8998;
+      height: 60px;
+      background: var(--elevated);
+      border-top: 1px solid var(--gold-line);
+    }
+    .mob-cta-main {
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px; flex: 1; height: 100%;
+      background: var(--gold); color: var(--black);
+      font-family: var(--font-body); font-size: 0.78rem;
+      font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .mob-cta-main:hover { opacity: 0.9; }
+    .mob-cta-wa {
+      display: flex; align-items: center; justify-content: center;
+      width: 68px; height: 100%; flex-shrink: 0;
+      background: #1fad55; color: #fff;
+      border-left: 1px solid rgba(255,255,255,0.1);
+      text-decoration: none; transition: background 0.2s;
+    }
+    .mob-cta-wa:hover { background: #25D366; }
+
+    @media (max-width: 768px) {
+      #mobile-cta-bar { display: flex; }
+      #wa-sticky { display: none; }
+      /* Abstand damit Footer nicht von Bar verdeckt wird */
+      footer { padding-bottom: calc(60px + 1rem); }
+    }
+
+    /* ── BACK TO TOP ── */
+    #back-to-top {
+      position: fixed;
+      bottom: 28px; right: 88px;
+      z-index: 8997;
+      width: 42px; height: 42px;
+      background: var(--elevated);
+      border: 1px solid var(--gold-line);
+      color: var(--gold);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s, transform 0.25s, border-color 0.2s;
+      border-radius: 0;
+    }
+    #back-to-top.visible {
+      opacity: 1; pointer-events: all;
+    }
+    #back-to-top:hover {
+      border-color: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 768px) {
+      #back-to-top {
+        bottom: 72px;
+        right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo" style="display:flex;align-items:center;gap:12px;">
+    <img src="./logo.png" alt="KAUROFF Malereibetrieb GmbH" style="height:48px;width:auto;display:block;" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#leistungen">Leistungen</a></li>
+    <li><a href="#projekte">Projekte</a></li>
+    <li><a href="#ueber-uns">Über uns</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <button class="nav-burger" id="burger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#leistungen" class="mob-link">Leistungen</a>
+  <a href="#projekte" class="mob-link">Projekte</a>
+  <a href="#ueber-uns" class="mob-link">Über uns</a>
+  <a href="#kontakt" class="mob-link">Kontakt</a>
+  <a href="tel:0511771222" class="mob-phone">0511 771222</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">KAUROFF Malereibetrieb GmbH – Langenhagen</p>
+    <h1 class="hero-h1">Aus einer Wand<br />wird ein <em>Unikat</em></h1>
+    <p class="hero-sub">Venezianische Spachteltechnik, Betonoptik &amp; edle Wandunikate im Raum Hannover – inhabergeführt seit 1996.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn-gold">
+        Kostenloses Angebot anfragen
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#projekte" class="btn-outline">Unsere Arbeiten sehen</a>
+    </div>
+    <div class="hero-social-mobile">
+      <a href="https://www.instagram.com/kauroff_malereibetrieb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/Kauroffmalereibetriebgmbh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="hero-info">
+    <div class="hero-info-item">
+      <p class="hero-info-label">Adresse</p>
+      <a href="https://www.google.com/maps/place/KAUROFF+Malereibetrieb+GmbH/@52.448703,9.7314362,18z/data=!4m6!3m5!1s0x47b072f2535a2c4f:0x6e19f30c0ce77974!8m2!3d52.4492203!4d9.7308104!16s%2Fg%2F1w4f74bh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="hero-info-value">Niedersachsenstraße 32B<br />30853 Langenhagen</a>
+    </div>
+    <div class="hero-info-item">
+      <p class="hero-info-label">Telefon</p>
+      <a href="tel:0511771222" class="hero-info-value">0511 771222</a>
+    </div>
+    <div class="hero-info-item">
+      <p class="hero-info-label">E-Mail</p>
+      <a href="mailto:info@kauroff.de" class="hero-info-value">info@kauroff.de</a>
+    </div>
+    <div class="hero-info-item hero-info-social">
+      <a href="https://www.instagram.com/kauroff_malereibetrieb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.facebook.com/Kauroffmalereibetriebgmbh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://wa.me/49XXXXXXXXXX" target="_blank" rel="noopener" class="hero-social-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.523 5.86L.057 23.571a.75.75 0 00.919.919l5.71-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.7-.504-5.25-1.385l-.372-.214-3.876.995.995-3.877-.214-.371A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+        WHATSAPP
+      </a>
+    </div>
+  </div>
+
+</section>
+
+<!-- LEISTUNGEN -->
+<section id="leistungen">
+  <p class="section-label">Was wir tun</p>
+  <h2 class="section-title">Unsere Leistungen</h2>
+  <div class="gold-divider"></div>
+
+  <div class="leistungen-feature-grid">
+    <div class="leistungen-block leistungen-block--featured">
+      <h3 class="leistungen-subhead">Unsere Spezialgebiete</h3>
+      <div class="leistungen-list featured">
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Venezianische Spachteltechnik</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./venezianisch.png"]' data-title="Venezianische Spachteltechnik" data-location="Hannover &amp; Umgebung" data-cat="wandunikate"><img src="./venezianisch.png" alt="Venezianische Spachteltechnik" loading="lazy" /></div><div class="leistung-desc-text">Glatt wie ein Spiegel, edel wie Marmor. Die venezianische Spachteltechnik ist das Premiumhandwerk unter den Wandgestaltungen — aufwendig, unverwechselbar, atemberaubend.<a href="#projekte" class="leistung-link" data-filter="wandunikate">Projekte ansehen →</a></div></div></div></div>
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Echtmetall &amp; Rostoptik</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./Rostoptik.png"]' data-title="Rostoptik" data-location="Hannover &amp; Umgebung" data-cat="wandunikate"><img src="./Rostoptik.png" alt="Echtmetall & Rostoptik" loading="lazy" /></div><div class="leistung-desc-text">Kalt wie echtes Metall, dabei federleicht. Unsere Echtmetall-Oberflächen bringen den Glanz von Stahl, Kupfer oder Messing direkt auf Ihre Wand. Industrieller Charme auf Ihrer Wand — authentische Rostoptik mit echtem Rost für ein einzigartiges, lebendiges Erscheinungsbild.<a href="#projekte" class="leistung-link" data-filter="wandunikate">Projekte ansehen →</a></div></div></div></div>
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Vergoldung &amp; Blattgold</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./Wandgestaltung.png"]' data-title="Vergoldung & Blattgold" data-location="Hannover &amp; Umgebung" data-cat="wandunikate"><img src="./Wandgestaltung.png" alt="Vergoldung & Blattgold" loading="lazy" /></div><div class="leistung-desc-text">Gold, Silber, Kupfer oder Bronze — vollflächige Wandvergoldungen für Räume die Luxus nicht nur andeuten, sondern ihn leben. Traditionelles Handwerk auf höchstem Niveau für Rahmen, Möbel und Architekturelemente.<a href="#projekte" class="leistung-link" data-filter="wandunikate">Projekte ansehen →</a></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="leistungen-block leistungen-block--featured">
+      <h3 class="leistungen-subhead">Unsere Haupttätigkeiten</h3>
+      <div class="leistungen-list featured">
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Malerarbeiten im Innenbereich</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./Innenanstrich.png"]' data-title="Innenanstrich Penthouse" data-location="Hannover &amp; Umgebung" data-cat="malerarbeiten"><img src="./Innenanstrich.png" alt="Malerarbeiten im Innenbereich" loading="lazy" /></div><div class="leistung-desc-text">Von der einfachen Renovierung bis zur aufwendigen Raumgestaltung — wir übernehmen alle Malerarbeiten im Innenbereich mit höchster Sorgfalt und Präzision.<a href="#projekte" class="leistung-link" data-filter="malerarbeiten">Projekte ansehen →</a></div></div></div></div>
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Moderne Betonoptikflächen</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./Betonoptik.png"]' data-title="Betonoptik" data-location="Hannover &amp; Umgebung" data-cat="wandunikate"><img src="./Betonoptik.png" alt="Betonoptikfläche" loading="lazy" /></div><div class="leistung-desc-text">Der urbane Look des Betons, ohne die Schwere des Materials. Glatt, kühl und zeitlos — perfekt für moderne Wohn- und Gewerberäume.<a href="#projekte" class="leistung-link" data-filter="wandunikate">Projekte ansehen →</a></div></div></div></div>
+        <div class="leistung-item"><button type="button" class="leistung-btn"><span>Bodenbelagsarbeiten</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc"><div class="leistung-desc-inner"><div class="leistung-desc-photo" data-images='["./Designboden.png"]' data-title="Designboden" data-location="Hannover &amp; Umgebung" data-cat="bodenbelaege"><img src="./Designboden.png" alt="Bodenbelagsarbeiten" loading="lazy" /></div><div class="leistung-desc-text">Teppich, Laminat oder Designbelag — wir verlegen Ihren neuen Boden sauber, passgenau und termingerecht.<a href="#projekte" class="leistung-link" data-filter="bodenbelaege">Projekte ansehen →</a></div></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="leistungen-separator"></div>
+
+  <div class="leistungen-block leistungen-block--compact">
+    <h3 class="leistungen-subhead">Weitere Leistungen</h3>
+    <div class="leistungen-list compact">
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Individuelle Raumgestaltung</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Jeder Raum erzählt eine Geschichte. Wir gestalten Ihre Wände individuell nach Ihren Wünschen — farbenfroh, subtil oder außergewöhnlich.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Einzigartige dekorative Wandunikate</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Kein Projekt gleicht dem anderen. Unsere Wandunikate sind handgefertigte Einzelstücke, die Ihren Räumen einen unverwechselbaren Charakter verleihen.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Spannlackdecken</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Hochglänzende oder matte Deckenoberflächen in Spannlack-Qualität — für Räume die von oben beeindrucken.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Oberflächengestaltung im Shabby Chic Style</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Charmant gealtert, bewusst unvollkommen — der Shabby Chic Stil bringt romantische Leichtigkeit und zeitlose Eleganz in jeden Raum.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Edel-, Kalk- und Lehmputze</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Natürliche Materialien für ein gesundes Raumklima. Kalk- und Lehmputze regulieren Feuchtigkeit, sind antiallergisch und schaffen eine warme, lebendige Wandoberfläche.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Hochwertige Designwandbeläge verkleben</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Exklusive Wandbeläge in Premium-Qualität — präzise verklebt, perfekt verarbeitet, für Ansprüche die über das Gewöhnliche hinausgehen.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Ganzwand-Foto-Beläge – voll im Trend</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Voll im Trend: Ihre Lieblingsfotografie, ein Naturmotiv oder ein abstraktes Kunstwerk — als raumgreifender Wandbelag der echte Blickfänger setzt.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Wandtattoos und Schriften</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Präzise aufgebrachte Schriftzüge, Motive und Wandtattoos — für persönliche Akzente in Wohn-, Kinder- oder Geschäftsräumen.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Farbige Streifen-Designs</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Horizontal, vertikal, schmal oder breit — farbige Streifen gestalten Räume optisch größer, dynamischer oder strukturierter.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Spiegelglanz-Deckenlackierungen oder auch matt</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Höchste Präzision bei der Deckenbearbeitung — ob spiegelglatt oder samtmatt, unsere Deckenlackierungen setzen den perfekten Abschluss.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Profilleisten verarbeiten – NMC oder Orac</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Saubere Übergänge und edle Raumabschlüsse mit hochwertigen Profilen von NMC oder Orac — das Detail das den Unterschied macht.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Tapezierarbeiten jeder Art</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Strukturtapeten, Vliestapeten, Naturfasern oder edle Stofftapeten — wir tapezieren präzise, blasenfrei und dauerhaft.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Aufarbeiten alter Holz-Fußbodenflächen</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Schleifen, versiegeln, neu lackieren — wir hauchen alten Holzdielen und Parkettböden neues Leben ein statt sie zu ersetzen.</div></div>
+      <div class="leistung-item"><button type="button" class="leistung-btn"><span>Lackierarbeiten in jeder Form</span><svg class="leistung-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="leistung-desc">Türen, Fenster, Heizkörper, Möbel — professionelle Lackierarbeiten für alle Oberflächen, in jeder Farbe, in jeder Qualitätsstufe.</div></div>
+    </div>
+    <div class="leistungen-final-link">
+      <a href="#projekte" class="leistung-link" data-filter="all">Alle Projekte ansehen →</a>
+    </div>
+  </div>
+
+  <div class="leistungen-cta">
+    <a href="#kontakt" class="btn-gold">Jetzt Angebot anfragen</a>
+  </div>
+</section>
+
+<!-- PROJEKTE -->
+<section id="projekte">
+  <p class="section-label">Referenzen</p>
+  <h2 class="section-title">Unsere Arbeiten</h2>
+  <div class="gold-divider"></div>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Alle</button>
+    <button class="filter-btn" data-filter="wandunikate">Wandunikate</button>
+    <button class="filter-btn" data-filter="malerarbeiten">Malerarbeiten</button>
+    <button class="filter-btn" data-filter="bodenbelaege">Bodenbeläge</button>
+    <button class="filter-btn" data-filter="vorher-nachher">Vorher–Nachher</button>
+  </div>
+  <div class="projekte-grid">
+
+    <div class="projekt-card" data-cat="wandunikate" data-title="Venezianische Spachteltechnik" data-location="Hannover &amp; Umgebung" data-images='["./venezianisch.png"]'>
+      <div class="projekt-img">
+        <img src="./venezianisch.png" alt="Venezianische Spachteltechnik" loading="lazy" />
+        <span class="projekt-cat">Wandunikat</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Venezianische Spachteltechnik</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="wandunikate" data-title="Betonoptik" data-location="Hannover &amp; Umgebung" data-images='["./Betonoptik.png"]'>
+      <div class="projekt-img">
+        <img src="./Betonoptik.png" alt="Betonoptik Büro" loading="lazy" />
+        <span class="projekt-cat">Wandunikat</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Betonoptik</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="wandunikate" data-title="Echtmetall-Wandoberfläche" data-location="Hannover &amp; Umgebung" data-images='["./Wandgestaltung.png"]'>
+      <div class="projekt-img">
+        <img src="./Wandgestaltung.png" alt="Echtmetall Restaurant" loading="lazy" />
+        <span class="projekt-cat">Wandunikat</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Echtmetall-Wandgestaltung</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="malerarbeiten" data-title="Innenanstrich Penthouse" data-location="Hannover &amp; Umgebung" data-images='["./Innenanstrich.png"]'>
+      <div class="projekt-img">
+        <img src="./Innenanstrich.png" alt="Innenanstrich Penthouse" loading="lazy" />
+        <span class="projekt-cat">Malerarbeiten</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Hochwertiger Innenanstrich</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="wandunikate" data-title="Rostoptik" data-location="Hannover &amp; Umgebung" data-images='["./Rostoptik.png"]'>
+      <div class="projekt-img">
+        <img src="./Rostoptik.png" alt="Rostoptik Loft" loading="lazy" />
+        <span class="projekt-cat">Wandunikat</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Rostoptik</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="bodenbelaege" data-title="Designboden" data-location="Hannover &amp; Umgebung" data-images='["./Designboden.png"]'>
+      <div class="projekt-img">
+        <img src="./Designboden.png" alt="Designboden Einbeck" loading="lazy" />
+        <span class="projekt-cat">Bodenbeläge</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Premium-Designboden</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+    <div class="projekt-card" data-cat="vorher-nachher" data-title="Vorher–Nachher" data-location="Hannover &amp; Umgebung" data-images='["./Vorher1.png","./Nachher1.png"]'>
+      <div class="projekt-img">
+        <img src="./Vorher1.png" alt="Vorher-Nachher" loading="lazy" />
+        <span class="projekt-cat">Vorher–Nachher</span>
+        <div class="projekt-overlay"><span class="projekt-overlay-label">Projekt ansehen</span></div>
+      </div>
+      <div class="projekt-info">
+        <h3>Vorher–Nachher</h3>
+        <p>Hannover &amp; Umgebung</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ÜBER UNS -->
+<section id="ueber-uns">
+  <div class="ueber-grid">
+    <div class="ueber-text">
+      <p class="section-label">Wer wir sind</p>
+      <h2 class="section-title">Malermeister<br />aus Leidenschaft</h2>
+      <div class="gold-divider"></div>
+      <p class="ueber-body">
+        Wir sind ein mittelständisches Familienunternehmen im Malerhandwerk, welches seit 1996 sehr erfolgreich am Markt besteht und heute bereits in der zweiten Familiengeneration von uns beiden Malermeistern <strong>Marco und Jan Kauroff</strong>, Vater und Sohn, geführt wird.<br /><br />
+        Wir haben es uns zur Aufgabe gemacht, mit unserem Team von Mitarbeitern unverwechselbare Wandoberflächen und einzigartige Wandunikate zu erstellen. So sind wir ständig auf der Suche nach den neuesten Wandgestaltungs-Highlights und immer bestrebt, neue Techniken in höchster Qualität auszuführen.<br /><br />
+        Bei uns steht der Kunde stets im Fokus und neben der Realisierung unserer Kundenwünsche ist auch gerade der ehrliche und respektvolle Umgang mit unserer Kundschaft eine Herzensangelegenheit für uns.<br /><br />
+        Wir sind immer wieder aufs Neue hoch motiviert bei der Erfüllung Ihrer Wünsche und gestalten Wandflächen mit Charakter, die faszinieren und staunen lassen. Über dies hinaus führen wir aber auch alle alltäglichen Malerarbeiten und Bodenbelagsarbeiten im Innenbereich mit Sorgfalt und Leidenschaft aus.<br /><br />
+        Wir lieben und leben unser Handwerk, weil wir <strong>Malermeister aus Leidenschaft</strong> sind und unsere Wandoberflächengestaltungen – ausgeführt in absoluter Perfektion und Vielfalt – im Raum Hannover und weit darüber hinaus ihresgleichen suchen. So zählen zu unseren Einsatzorten auch <strong>Hamburg, Einbeck, Usedom und Mallorca</strong>.
+      </p>
+      <div class="ueber-stats">
+        <div class="stat-item">
+          <div class="stat-value">1996</div>
+          <div class="stat-label">Gegründet</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">2. Gen.</div>
+          <div class="stat-label">Familien&shy;geführt</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">DE &amp; EU</div>
+          <div class="stat-label">Einsatz&shy;gebiet</div>
+        </div>
+      </div>
+    </div>
+    <div class="ueber-img-wrap">
+      <img src="./ueberuns.png" alt="Marco und Jan-Daniel Kauroff" class="ueber-img" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="section-label">Kundenstimmen</p>
+  <h2 class="section-title">Das sagen unsere Kunden</h2>
+  <div class="gold-divider"></div>
+  <div class="testi-grid">
+
+    <div class="testi-card">
+      <div class="testi-stars">
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+      </div>
+      <p class="testi-text">„Ich habe vor kurzem bei der Firma Kauroff angefragt, ob kurzfristig kleinere Malerarbeiten durchgeführt werden können. Ich habe sehr schnell eine positive Antwort bekommen und der Auftrag wurde von Hr. Kauroff jun. persönlich ausgeführt."</p>
+      <p class="testi-author"><strong>Nicole S.</strong> · Google Rezension</p>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+      </div>
+      <p class="testi-text">„Top Malereibetrieb! Wir sind rundum sehr zufrieden. Herr Kauroff jun. hat bei uns sehr gute Arbeit geleistet."</p>
+      <p class="testi-author"><strong>Lennart Schaer</strong> · Local Guide · Google Rezension</p>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+        <svg viewBox="0 0 16 16"><path d="M8 1l1.8 4H14l-3.5 2.6 1.3 4.1L8 9.3l-3.8 2.4 1.3-4.1L2 5h4.2z"/></svg>
+      </div>
+      <p class="testi-text">„Ich habe erst letzte Woche angefragt, ob Fam. Kauroff auch kleine Arbeiten annimmt. Habe schnell eine positive Antwort bekommen. Gestern hat Herr Kauroff jun. die Vorarbeit geleistet, heute ist er schon fertig. Bin sehr zufrieden mit seiner Arbeit. Ich werde mich wieder für den Familienbetrieb entscheiden."</p>
+      <p class="testi-author"><strong>Sabine</strong> · Google Rezension</p>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:48px;">
+    <a href="https://www.google.com/maps/place/KAUROFF+Malereibetrieb+GmbH/@52.448703,9.7314362,18z/data=!4m6!3m5!1s0x47b072f2535a2c4f:0x6e19f30c0ce77974!8m2!3d52.4492203!4d9.7308104!16s%2Fg%2F1w4f74bh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn-outline" style="display:inline-flex;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Alle Rezensionen auf Google Maps
+    </a>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+  <p class="section-label">Kontakt aufnehmen</p>
+  <h2 class="section-title">Angebot anfragen</h2>
+  <div class="gold-divider"></div>
+  <div class="kontakt-grid">
+
+    <div>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-name">Name *</label>
+            <input type="text" id="f-name" name="name" placeholder="Ihr vollständiger Name" required />
+          </div>
+          <div class="form-group">
+            <label for="f-tel">Telefon</label>
+            <input type="tel" id="f-tel" name="telefon" placeholder="Ihre Telefonnummer" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="f-email">E-Mail *</label>
+          <input type="email" id="f-email" name="email" placeholder="ihre@email.de" required />
+        </div>
+        <div class="form-group">
+          <label for="f-leistung">Gewünschte Leistung *</label>
+          <select id="f-leistung" name="leistung" required>
+            <option value="" disabled selected>Bitte wählen …</option>
+            <option value="wandunikate">Wandunikate &amp; Spachteltechniken</option>
+            <option value="malerarbeiten">Standard Malerarbeiten Innen</option>
+            <option value="lackierarbeiten">Lackierarbeiten</option>
+            <option value="tapezierarbeiten">Tapezierarbeiten</option>
+            <option value="bodenbelag">Bodenbelagsarbeiten</option>
+            <option value="sonstiges">Sonstiges / Ich bin noch unsicher</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-nachricht">Nachricht *</label>
+          <textarea id="f-nachricht" name="nachricht" placeholder="Beschreiben Sie kurz Ihr Projekt …" required></textarea>
+        </div>
+        <button type="submit" class="btn-gold" style="width:100%;justify-content:center;">
+          Anfrage absenden
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">
+          Vielen Dank! Ihre Anfrage ist eingegangen. Wir melden uns innerhalb von 24 Stunden.
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <div class="info-block">
+        <p class="info-block-label">Adresse</p>
+        <p style="color:var(--text);font-weight:500;">KAUROFF Malereibetrieb GmbH<br />Niedersachsenstraße 32B<br />30853 Langenhagen</p>
+        <a href="https://www.google.com/maps/place/KAUROFF+Malereibetrieb+GmbH/@52.448703,9.7314362,18z/data=!4m6!3m5!1s0x47b072f2535a2c4f:0x6e19f30c0ce77974!8m2!3d52.4492203!4d9.7308104!16s%2Fg%2F1w4f74bh?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='.7'" onmouseout="this.style.opacity='1'">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Auf Google Maps öffnen
+        </a>
+      </div>
+      <div class="info-block">
+        <p class="info-block-label">Telefon &amp; E-Mail</p>
+        <p>
+          <a href="tel:0511771222">0511 771222</a><br />
+          <a href="mailto:info@kauroff.de">info@kauroff.de</a>
+        </p>
+      </div>
+      <div class="info-block">
+        <p class="info-block-label">Öffnungszeiten</p>
+        <div class="info-hours">
+          <span class="day">Mo – Fr</span><span class="time">08:00 – 18:00 Uhr</span>
+          <span class="day">Samstag</span><span class="time">08:00 – 14:00 Uhr</span>
+          <span class="day">Sonntag</span><span class="time">Geschlossen</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <p class="info-block-label">Einsatzgebiet</p>
+        <p>Hannover, Hamburg, Einbeck,<br />Usedom, Mallorca &amp; bundesweit</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.847!2d9.7308104!3d52.4492203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b072f2535a2c4f%3A0x6e19f30c0ce77974!2sKAUROFF%20Malereibetrieb%20GmbH!5e0!3m2!1sde!2sde!4v1"
+        width="100%"
+        height="220"
+        style="border:0; display:block; margin-top:24px; filter: grayscale(100%) invert(92%) contrast(83%);"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="KAUROFF Malereibetrieb GmbH auf Google Maps">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo"><img src="./logo.png" alt="KAUROFF Malereibetrieb GmbH" style="height:44px;width:auto;display:block;" /></div>
+    <ul class="footer-links">
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 KAUROFF Malereibetrieb GmbH</p>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <div id="lb-header">
+    <div id="lb-meta">
+      <span id="lb-title"></span>
+      <span id="lb-location"></span>
+    </div>
+    <button id="lb-close" aria-label="Schließen">&#x2715;</button>
+  </div>
+  <div id="lb-img-wrap">
+    <button class="lb-nav" id="lb-prev" aria-label="Vorheriges Bild">&#8592;</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-nav" id="lb-next" aria-label="Nächstes Bild">&#8594;</button>
+  </div>
+  <div id="lb-footer">
+    <span id="lb-counter"></span>
+    <div id="lb-vn-toggle">
+      <button id="lb-vn-before" class="lb-vn-btn active">
+        <span class="lb-vn-dot"></span>Vorher
+      </button>
+      <div class="lb-vn-divider"></div>
+      <button id="lb-vn-after" class="lb-vn-btn">
+        <span class="lb-vn-dot"></span>Nachher
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP STICKY -->
+<a id="wa-sticky"
+   href="https://wa.me/49XXXXXXXXXX"
+   target="_blank"
+   rel="noopener"
+   aria-label="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.523 5.86L.057 23.571a.75.75 0 00.919.919l5.71-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.7-.504-5.25-1.385l-.372-.214-3.876.995.995-3.877-.214-.371A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a>
+
+<script>
+  // Sticky nav border
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Mobile burger
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => menu.classList.toggle('open'));
+  document.querySelectorAll('.mob-link, .mob-phone').forEach(l => {
+    l.addEventListener('click', () => menu.classList.remove('open'));
+  });
+
+  // Lightbox
+  (function() {
+    const overlay = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbTitle = document.getElementById('lb-title');
+    const lbLocation = document.getElementById('lb-location');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+    const lbVnToggle = document.getElementById('lb-vn-toggle');
+    const lbVnBefore = document.getElementById('lb-vn-before');
+    const lbVnAfter = document.getElementById('lb-vn-after');
+    let images = [], idx = 0, isVN = false;
+
+    function open(card) {
+      images = JSON.parse(card.dataset.images || '[]');
+      isVN = card.dataset.cat === 'vorher-nachher';
+      idx = 0;
+      lbTitle.textContent = card.dataset.title || '';
+      lbLocation.textContent = card.dataset.location || '';
+      lbVnToggle.style.display = isVN ? 'flex' : 'none';
+      lbPrev.style.display = (!isVN && images.length > 1) ? 'flex' : 'none';
+      lbNext.style.display = (!isVN && images.length > 1) ? 'flex' : 'none';
+      if (isVN) { lbVnBefore.classList.add('active'); lbVnAfter.classList.remove('active'); }
+      show();
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function show() {
+      lbImg.style.opacity = '0';
+      lbImg.src = images[idx];
+      lbImg.onload = () => { lbImg.style.opacity = '1'; };
+      // fallback if already cached
+      if (lbImg.complete) lbImg.style.opacity = '1';
+      if (!isVN) lbCounter.textContent = images.length > 1 ? (idx + 1) + ' / ' + images.length : '';
+      else lbCounter.textContent = '';
+    }
+    function prev() { idx = (idx - 1 + images.length) % images.length; show(); }
+    function next() { idx = (idx + 1) % images.length; show(); }
+    function showBefore() { idx = 0; lbVnBefore.classList.add('active'); lbVnAfter.classList.remove('active'); show(); }
+    function showAfter()  { idx = 1; lbVnAfter.classList.add('active'); lbVnBefore.classList.remove('active'); show(); }
+
+    document.querySelectorAll('.projekt-card, .leistung-desc-photo').forEach(card => {
+      card.addEventListener('click', () => open(card));
+    });
+    document.getElementById('lb-close').addEventListener('click', e => { e.stopPropagation(); close(); });
+    document.getElementById('lb-img-wrap').addEventListener('click', e => { if (e.target !== lbImg) close(); });
+    lbPrev.addEventListener('click', e => { e.stopPropagation(); prev(); });
+    lbNext.addEventListener('click', e => { e.stopPropagation(); next(); });
+    lbVnBefore.addEventListener('click', e => { e.stopPropagation(); showBefore(); });
+    lbVnAfter.addEventListener('click', e => { e.stopPropagation(); showAfter(); });
+
+    document.addEventListener('keydown', e => {
+      if (!overlay.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      if (isVN) { if (e.key === 'ArrowLeft') showBefore(); if (e.key === 'ArrowRight') showAfter(); }
+      else { if (e.key === 'ArrowLeft') prev(); if (e.key === 'ArrowRight') next(); }
+    });
+
+    let touchX = null;
+    overlay.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    overlay.addEventListener('touchend', e => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 50) {
+        if (isVN) dx < 0 ? showAfter() : showBefore();
+        else dx < 0 ? next() : prev();
+      }
+      touchX = null;
+    }, { passive: true });
+  })();
+
+  // Lightbox CSS injected dynamically for cleanliness
+  const lbStyle = document.createElement('style');
+  lbStyle.textContent = `
+    #lightbox { position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.92); display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.25s; }
+    #lightbox.open { opacity:1; pointer-events:all; }
+    #lb-header { position:absolute; top:0; left:0; right:0; z-index:2; display:flex; align-items:center; justify-content:space-between; padding:20px 28px; background:linear-gradient(to bottom,rgba(0,0,0,0.7),transparent); }
+    #lb-meta { display:flex; flex-direction:column; gap:2px; }
+    #lb-title { font-size:1rem; font-weight:700; color:#f0ede8; letter-spacing:0.02em; }
+    #lb-location { font-size:0.72rem; color:#c9a84c; letter-spacing:0.1em; text-transform:uppercase; }
+    #lb-close { width:40px; height:40px; border:1px solid rgba(201,168,76,0.4); background:transparent; color:#f0ede8; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s,background 0.2s; }
+    #lb-close:hover { border-color:#c9a84c; background:rgba(201,168,76,0.1); }
+    #lb-img-wrap { position:relative; display:flex; align-items:center; justify-content:center; width:100%; height:100%; padding:80px 80px 60px; box-sizing:border-box; }
+    #lb-img { max-width:100%; max-height:100%; object-fit:contain; transition:opacity 0.25s; }
+    .lb-nav { position:absolute; top:50%; transform:translateY(-50%); width:48px; height:48px; border:1px solid rgba(201,168,76,0.4); background:rgba(0,0,0,0.5); color:#f0ede8; font-size:1.2rem; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color 0.2s,background 0.2s; }
+    .lb-nav:hover { border-color:#c9a84c; background:rgba(201,168,76,0.15); }
+    #lb-prev { left:16px; }
+    #lb-next { right:16px; }
+    #lb-footer { position:absolute; bottom:0; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:16px; padding:20px 28px 28px; background:linear-gradient(to top,rgba(0,0,0,0.75),transparent); }
+    #lb-counter { font-size:0.72rem; color:rgba(240,237,232,0.5); letter-spacing:0.15em; }
+    #lb-vn-toggle { display:none; align-items:center; gap:0; }
+    .lb-vn-btn { display:flex; align-items:center; gap:10px; padding:13px 28px; background:transparent; color:rgba(240,237,232,0.45); font-family:inherit; font-size:0.75rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; border:1px solid rgba(201,168,76,0.25); cursor:pointer; transition:background 0.25s,color 0.25s,border-color 0.25s; }
+    .lb-vn-btn:first-child { border-right:none; }
+    .lb-vn-btn.active { background:var(--gold,#c9a84c); color:#0d0d0d; border-color:var(--gold,#c9a84c); }
+    .lb-vn-btn:not(.active):hover { border-color:rgba(201,168,76,0.6); color:rgba(240,237,232,0.8); }
+    .lb-vn-dot { width:7px; height:7px; border-radius:50%; background:currentColor; flex-shrink:0; }
+    .lb-vn-divider { width:1px; height:46px; background:rgba(201,168,76,0.25); }
+    @media (max-width:600px) { #lb-img-wrap { padding:70px 16px 80px; } .lb-nav { width:36px; height:36px; } #lb-prev { left:6px; } #lb-next { right:6px; } .lb-vn-btn { padding:11px 20px; font-size:0.68rem; } }
+  `;
+  document.head.appendChild(lbStyle);
+
+  // Leistungen Accordion
+  document.querySelectorAll('.leistung-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.leistung-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Project filter
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      document.querySelectorAll('.projekt-card').forEach(c => {
+        c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f);
+      });
+    });
+  });
+
+  // Leistungen: Links zu gefilterten Projekten
+  document.querySelectorAll('.leistung-link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const filterBtn = document.querySelector('.filter-btn[data-filter="' + link.dataset.filter + '"]');
+      if (filterBtn) filterBtn.click();
+      document.getElementById('projekte').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Form
+  const FORMSPREE_ID = 'maqzpoev';
+  const form = document.getElementById('contactForm');
+  const requiredFields = ['f-name', 'f-email', 'f-leistung', 'f-nachricht'];
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    let ok = true;
+    requiredFields.forEach(id => {
+      const el = document.getElementById(id);
+      if (!el.value.trim()) { el.classList.add('error'); ok = false; }
+      else el.classList.remove('error');
+    });
+    const em = document.getElementById('f-email');
+    if (em.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)) {
+      em.classList.add('error'); ok = false;
+    }
+    if (!ok) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Wird gesendet …';
+
+    try {
+      const data = {
+        name: document.getElementById('f-name').value,
+        email: em.value,
+        telefon: document.getElementById('f-telefon')?.value || '',
+        leistung: document.getElementById('f-leistung').value,
+        nachricht: document.getElementById('f-nachricht').value,
+      };
+      const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        document.getElementById('formSuccess').style.display = 'block';
+        form.reset();
+        setTimeout(() => { document.getElementById('formSuccess').style.display = 'none'; }, 7000);
+      } else {
+        alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an info@kauroff.de');
+      }
+    } catch {
+      alert('Netzwerkfehler. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = 'Anfrage absenden <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }
+  });
+
+  document.querySelectorAll('input,select,textarea').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('error'));
+  });
+</script>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner">
+  <div class="cookie-inner">
+    <p class="cookie-text">
+      Diese Website verwendet notwendige Cookies für das Kontaktformular.
+      Durch die Nutzung stimmen Sie der Verwendung zu.
+      <a href="datenschutz.html" class="cookie-link">Datenschutzerklärung</a>
+    </p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn-cookie-accept">Verstanden</button>
+      <button id="cookie-decline" class="btn-cookie-decline">Ablehnen</button>
+    </div>
+  </div>
+</div>
+<script>
+  (function() {
+    const banner = document.getElementById('cookie-banner');
+    const accept = document.getElementById('cookie-accept');
+    const decline = document.getElementById('cookie-decline');
+    if (localStorage.getItem('cookie-consent')) {
+      banner.classList.add('hidden');
+    }
+    accept.addEventListener('click', function() {
+      localStorage.setItem('cookie-consent', 'accepted');
+      banner.classList.add('hidden');
+    });
+    decline.addEventListener('click', function() {
+      localStorage.setItem('cookie-consent', 'declined');
+      banner.classList.add('hidden');
+    });
+  })();
+</script>
+
+<!-- MOBILE CTA BAR -->
+<div id="mobile-cta-bar">
+  <a href="#kontakt" class="mob-cta-main">
+    Angebot anfragen
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+      <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/49XXXXXXXXXX"
+     target="_blank" rel="noopener"
+     class="mob-cta-wa" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.523 5.86L.057 23.571a.75.75 0 00.919.919l5.71-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.7-.504-5.25-1.385l-.372-.214-3.876.995.995-3.877-.214-.371A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- BACK TO TOP -->
+<button id="back-to-top" aria-label="Nach oben">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <path d="M8 13V3M3 8l5-5 5 5" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+<script>
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    btt.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
